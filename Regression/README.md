@@ -14,56 +14,56 @@ This project implements Linear Regression using the Gradient Descent algorithm. 
 
 ### Linear Regression with Gradient Descent
 
-In Linear Regression, we aim to predict a continuous target variable \( y \) based on one or more input features \( x_1, x_2, ..., x_n \). The predicted value \( \hat{y} \) is given by the equation:
+In Linear Regression, we aim to predict a continuous target variable $\( y \)$ based on one or more input features $\( x_1, x_2, ..., x_n \)$. The predicted value $\( \hat{y} \)$ is given by the equation:
 
-\[ \hat{y} = \theta_0 + \theta_1x_1 + \theta_2x_2 + ... + \theta_nx_n \]
+$\[ \hat{y} = \theta_0 + \theta_1x_1 + \theta_2x_2 + ... + \theta_nx_n \]$
 
 Where:
-- \( \hat{y} \) is the predicted target variable,
-- \( x_1, x_2, ..., x_n \) are the input features,
-- \( \theta_0, \theta_1, ..., \theta_n \) are the coefficients (parameters) to be learned.
+- $\( \hat{y} \)$ is the predicted target variable,
+- $\( x_1, x_2, ..., x_n \)$ are the input features,
+- $\( \theta_0, \theta_1, ..., \theta_n \)$ are the coefficients (parameters) to be learned.
 
 #### Cost Function
 
 The cost function measures the difference between the predicted values and the actual values in the training data. One commonly used cost function for Linear Regression is the Mean Squared Error (MSE), defined as:
 
-\[ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2 \]
+$\[ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2 \]$
 
 Where:
-- \( J(\theta) \) is the cost function,
-- \( m \) is the number of training examples,
-- \( \hat{y}_i \) is the predicted value for the \( i^{th} \) example,
-- \( y_i \) is the actual value for the \( i^{th} \) example.
+- $\( J(\theta) \)$ is the cost function,
+- $\( m \)$ is the number of training examples,
+- $\( \hat{y}_i \)$ is the predicted value for the $\( i^{th} \)$ example,
+- $\( y_i \)$ is the actual value for the $\( i^{th} \)$ example.
 
 #### Gradient Descent
 
-Gradient Descent is an optimization algorithm used to minimize the cost function. The update rule for each parameter \( \theta_j \) in Batch Gradient Descent is given by:
+Gradient Descent is an optimization algorithm used to minimize the cost function. The update rule for each parameter $\( \theta_j \)$ in Batch Gradient Descent is given by:
 
-\[ \theta_j = \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta) \]
+$\[ \theta_j = \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta) \]$
 
 Where:
-- \( \alpha \) is the learning rate.
+- $\( \alpha \)$ is the learning rate.
 
-The partial derivative \( \frac{\partial}{\partial \theta_j} J(\theta) \) represents the gradient of the cost function with respect to \( \theta_j \).
+The partial derivative $\( \frac{\partial}{\partial \theta_j} J(\theta) \)$ represents the gradient of the cost function with respect to $\( \theta_j \)$.
 
 #### Gradient Calculation
 
-To compute the gradient of the cost function, we calculate the derivative of \( J(\theta) \) with respect to each parameter \( \theta_j \). For the MSE cost function, the gradient for \( \theta_j \) is given by:
+To compute the gradient of the cost function, we calculate the derivative of $\( J(\theta) \)$ with respect to each parameter $\( \theta_j \)$. For the MSE cost function, the gradient for $\( \theta_j \)$ is given by:
 
-\[ \frac{\partial}{\partial \theta_j} J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_{ij} \]
+$\[ \frac{\partial}{\partial \theta_j} J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_{ij} \]$
 
 Where:
-- \( x_{ij} \) is the \( j^{th} \) feature of the \( i^{th} \) example.
+- $\( x_{ij} \)$ is the $\( j^{th} \)$ feature of the $\( i^{th} \)$ example.
 
 #### Update Rule
 
-The update rule for each parameter \( \theta_j \) in Batch Gradient Descent becomes:
+The update rule for each parameter $\( \theta_j \)$ in Batch Gradient Descent becomes:
 
-\[ \theta_j = \theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_{ij} \]
+$\[ \theta_j = \theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_{ij} \]$
 
-This update is applied simultaneously for all parameters \( \theta_0, \theta_1, ..., \theta_n \) until convergence.
+This update is applied simultaneously for all parameters $\( \theta_0, \theta_1, ..., \theta_n \)$ until convergence.
 
-Gradient Descent iteratively updates the parameters of the Linear Regression model to minimize the cost function, leading to better predictions. By adjusting the learning rate and the number of iterations, Gradient Descent finds the optimal values of \( \theta_0, \theta_1, ..., \theta_n \) that best fit the training data.
+Gradient Descent iteratively updates the parameters of the Linear Regression model to minimize the cost function, leading to better predictions. By adjusting the learning rate and the number of iterations, Gradient Descent finds the optimal values of $\( \theta_0, \theta_1, ..., \theta_n \)$ that best fit the training data.
 
 
 ## Dataset
@@ -98,4 +98,4 @@ The dataset used in this project is provided in the `data.csv` file. The first 7
 
 ```bash
 python main.py
-$\[ \theta_j = \theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_{ij} \]$
+```
