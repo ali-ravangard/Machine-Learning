@@ -92,7 +92,7 @@ The dataset used in this project is provided in the `data.csv` file. The first 7
       <img src="./results/images/linear_regression_gd_decisionboundary.png" width=750 alt="Decision Boundary">
 </div>
   
-  ![Decision Boudnary](./results/images/linear_regression_gd_decisionboundary.png)
+  <!--![Decision Boudnary](./results/images/linear_regression_gd_decisionboundary.png)-->
 
 - Mean Squared Error (MSE):
 <div align="center">
