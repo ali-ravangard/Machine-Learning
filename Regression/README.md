@@ -84,18 +84,20 @@ The dataset used in this project is provided in the `data.csv` file. The first 7
 ## Results
 
 - Learned Parameters:
-  - θ0, θ1, ..., θn
+  - $\( \theta_0 = -0.36933451\)$
+  - $(\theta_1 = -0.2392315\)$
+
+- Decision boundary:
+![Decision Boundary](results/images/linear_regression_gd_decisionboundary.png)
+
+
 - Mean Squared Error (MSE):
-  - Train MSE:
-  - Test MSE:
+  ![MSE](results/images/linearregression_gd_cost_function.png)
+
 
 ## How to Run
 
 1. Clone this repository.
 2. Navigate to the project directory.
 3. Ensure you have all dependencies installed.
-4. Run the main script to execute the project.
 
-```bash
-python main.py
-```
