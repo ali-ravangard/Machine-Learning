@@ -59,7 +59,7 @@ Where:
 #### Update Rule
 
 The update rule for each parameter $\( \theta_j \)$ in Batch Gradient Descent becomes:
-
+$\[ \theta_j = \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta) \]$
 $\[ \theta_j = \theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_{ij} \]$
 
 This update is applied simultaneously for all parameters $\( \theta_0, \theta_1, ..., \theta_n \)$ until convergence.
