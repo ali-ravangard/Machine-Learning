@@ -99,7 +99,7 @@ The dataset used in this project is provided in the `data.csv` file. The first 7
       <img src="./results/images/linearregression_gd_cost_function.png" width=750 alt="Cost function">
 </div>
 
-  <%-- ![MSE](./results/images/linearregression_gd_cost_function.png) -->
+  <!--![MSE](./results/images/linearregression_gd_cost_function.png)-->
 
 
 ## How to Run
