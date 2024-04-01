@@ -50,10 +50,10 @@ The partial derivative $\( \frac{\partial}{\partial \theta_j} J(\theta) \)$ repr
 
 To compute the gradient of the cost function, we calculate the derivative of $\( J(\theta) \)$ with respect to each parameter $\( \theta_j \)$. For the MSE cost function, the gradient for $\( \theta_j \)$ is given by:
 
-$\( \frac{\partial}{\partial \theta_j} J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) x_{ij} \)$
+$\( \frac{\partial}{\partial \theta_j} J(\theta) = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i)x_{ij} \)$
 $\( \frac{\partial}{\partial \theta_j} J(\theta) \)$
 $\( \frac{1}{m} \sum_{i=1}^{m} (\hat{y}_i - y_i) \)$
-
+$\( x_{ij} \)$
 Where:
 - $\( x_{ij} \)$ is the $\( j^{th} \)$ feature of the $\( i^{th} \)$ example.
 
