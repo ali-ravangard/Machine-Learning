@@ -88,13 +88,16 @@ The dataset used in this project is provided in the `data.csv` file. The first 7
   - $(\theta_1 = -0.2392315\)$
 
 - Decision boundary:
-- <div align="center">
+<div align="center">
       <img src="./results/images/linear_regression_gd_decisionboundary.png" width=750 alt="Decision Boundary">
 </div>
   
   ![Decision Boudnary](./results/images/linear_regression_gd_decisionboundary.png)
 
 - Mean Squared Error (MSE):
+<div align="center">
+      <img src="./results/images/linearregression_gd_cost_function.png" width=750 alt="Cost function">
+</div>
 
   ![MSE](./results/images/linearregression_gd_cost_function.png)
 
