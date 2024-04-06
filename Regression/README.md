@@ -177,6 +177,7 @@ Where:
       <img src="./results/images/linear_regression_CF_decisionboundary.png" width=750 alt="Decision Boundary">
 </div>
 
+<!--![MSE](./results/images/linearregression_CF_decisionboundary.png)-->
 
 ### Advantages
 
